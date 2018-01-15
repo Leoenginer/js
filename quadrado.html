@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: gray;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div onmouseover="trocarCorQuadrado()"></div>
+
+		<script type="text/javascript">
+			let quadrado = document.querySelector('div');
+
+			function trocarCorQuadrado(){
+				quadrado.style.backgroundImage = "linear-gradient(to right, blue, green)";
+				quadrado.style.transform = "scale(2,2)";
+				quadrado.style.transform = 'rotate(130deg)'
+				quadrado.style.borderRadius = '40px'
+				quadrado.style.position = "absolute"
+				quadrado.style.right = "0px"
+			}
+
+		</script>
+	</body>
+</html>
